@@ -1,4 +1,4 @@
-update=Qui 04 Jun 2015 15:57:47 BRT
+update=Sex 05 Jun 2015 16:30:10 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=pluglib/processing/processing
+LibName32=pluglib/rf/balun
