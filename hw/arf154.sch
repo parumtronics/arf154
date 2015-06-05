@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -47,9 +47,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1250 1000 1350 2100
+S 1000 2900 1350 2100
 U 55709F36
 F0 "MainProcessor" 60
 F1 "plugmodules/processing/atsamr21q1x.sch" 60
+$EndSheet
+$Sheet
+S 1050 800  1100 1050
+U 55722354
+F0 "MainPower" 60
+F1 "plugmodules/power/linear3v3.sch" 60
 $EndSheet
 $EndSCHEMATC
