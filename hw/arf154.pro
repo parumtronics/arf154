@@ -1,4 +1,4 @@
-update=Sex 05 Jun 2015 17:09:40 BRT
+update=Sex 05 Jun 2015 18:09:24 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,6 +59,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=pluglib/processing/processing
-LibName32=pluglib/rf/balun
-LibName33=pluglib/rf/rf
+LibName31=pluglib/rf/balun
+LibName32=pluglib/rf/rf
+LibName33=pluglib/processing/transceiversoc

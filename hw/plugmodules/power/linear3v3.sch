@@ -28,9 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:processing
 LIBS:balun
 LIBS:rf
+LIBS:transceiversoc
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END

@@ -28,9 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:processing
 LIBS:balun
 LIBS:rf
+LIBS:transceiversoc
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END
@@ -176,17 +176,6 @@ F 1 "SW_PUSH" H 3350 2620 50  0000 C CNN
 F 2 "" H 3350 2700 60  0000 C CNN
 F 3 "" H 3350 2700 60  0000 C CNN
 	1    3350 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L ATSAMR21Q1x U?
-U 1 1 5570A60A
-P 5250 3850
-F 0 "U?" H 4850 5200 50  0000 C CNN
-F 1 "ATSAMR21Q1x" H 5350 2250 50  0000 C CNN
-F 2 "" H 5200 3550 60  0000 C CNN
-F 3 "" H 5200 3550 60  0000 C CNN
-	1    5250 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -614,4 +603,15 @@ Text HLabel 5900 5350 2    60   Input ~ 0
 PA23
 Text Notes 8400 650  0    60   ~ 0
 Notes
+$Comp
+L ATSAMR21G1x U?
+U 1 1 55721320
+P 5250 3850
+F 0 "U?" H 4850 5200 50  0000 C CNN
+F 1 "ATSAMR21G1x" H 5350 2250 50  0000 C CNN
+F 2 "" H 5200 3550 60  0000 C CNN
+F 3 "" H 5200 3550 60  0000 C CNN
+	1    5250 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
