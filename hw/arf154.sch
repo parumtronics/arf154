@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:processing
 LIBS:balun
+LIBS:rf
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END

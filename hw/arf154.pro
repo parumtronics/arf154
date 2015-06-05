@@ -1,4 +1,4 @@
-update=Sex 05 Jun 2015 16:30:10 BRT
+update=Sex 05 Jun 2015 17:09:40 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=pluglib/processing/processing
 LibName32=pluglib/rf/balun
+LibName33=pluglib/rf/rf
