@@ -31,12 +31,13 @@ LIBS:valves
 LIBS:balun
 LIBS:rf
 LIBS:transceiversoc
+LIBS:esdprotection
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""

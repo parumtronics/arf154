@@ -1,4 +1,4 @@
-update=Sex 05 Jun 2015 18:09:24 BRT
+update=Sáb 06 Jun 2015 17:24:24 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=valves
 LibName31=pluglib/rf/balun
 LibName32=pluglib/rf/rf
 LibName33=pluglib/processing/transceiversoc
+LibName34=pluglib/comm/esdprotection
