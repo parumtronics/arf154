@@ -2,12 +2,15 @@
 
 Arf154 is an arduino compatible wireless network ready board.
 
-The board core is the atsamr21q1x SoC. The device integrates a Cortex-M0 and a
+The board core is the atsamr21g1x SoC. The device integrates a Cortex-M0 and a
 IEEE 802.15.4 transceiver.
+
+![Diagram](arf154.png)
 
 ## Footprint
 
-The design is targeting to be as compatible as possible with Teensy3.1 boards.
+The design is targeting to be as compatible as possible with Arduino nano.
+
 
 ## How to program
 

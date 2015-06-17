@@ -1,4 +1,4 @@
-update=Sáb 06 Jun 2015 17:24:24 BRT
+update=Ter 16 Jun 2015 07:28:55 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=pluglib/rf/balun
 LibName32=pluglib/rf/rf
 LibName33=pluglib/processing/transceiversoc
 LibName34=pluglib/comm/esdprotection
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../../Imagens/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
