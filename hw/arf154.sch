@@ -76,6 +76,7 @@ F22 "PA24" I R 2050 5600 60
 F23 "PA25" I R 2050 5700 60 
 F24 "PA27" I R 2050 5900 60 
 F25 "PA28" I R 2050 6000 60 
+F26 "RST" I R 2050 6400 60 
 $EndSheet
 $Sheet
 S 800  900  1100 1050
@@ -97,17 +98,17 @@ Main power circuit\n
 Text Notes 5100 1700 0    60   ~ 0
 USB protection and connector\n
 Text Label 2200 5600 0    60   ~ 0
-D+
+D_P
 Wire Wire Line
 	2200 5600 2050 5600
 Text Label 2200 5700 0    60   ~ 0
-D-
+D_N
 Wire Wire Line
 	2050 5700 2200 5700
 Text Label 4950 1150 2    60   ~ 0
-D+
+D_P
 Text Label 4950 1250 2    60   ~ 0
-D-
+D_N
 Wire Wire Line
 	4950 1250 5100 1250
 Wire Wire Line
@@ -190,12 +191,12 @@ Need to add protection
 $Comp
 L CONN_01X15 P2
 U 1 1 557FE7ED
-P 5700 4050
-F 0 "P2" H 5700 4850 50  0000 C CNN
-F 1 "CONN_01X15" V 5800 4050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 5700 4050 60  0001 C CNN
-F 3 "" H 5700 4050 60  0000 C CNN
-	1    5700 4050
+P 5150 4000
+F 0 "P2" H 5150 4800 50  0000 C CNN
+F 1 "Cn2" V 5250 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 5150 4000 60  0001 C CNN
+F 3 "" H 5150 4000 60  0000 C CNN
+	1    5150 4000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -203,10 +204,159 @@ L CONN_01X15 P1
 U 1 1 557FE89D
 P 4350 4000
 F 0 "P1" H 4350 4800 50  0000 C CNN
-F 1 "CONN_01X15" V 4450 4000 50  0000 C CNN
+F 1 "Cn1" V 4450 4000 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 4350 4000 60  0001 C CNN
 F 3 "" H 4350 4000 60  0000 C CNN
 	1    4350 4000
 	1    0    0    -1  
 $EndComp
+Text Label 2300 6400 0    60   ~ 0
+RST
+Wire Wire Line
+	2050 6400 2300 6400
+Text Label 4000 3500 2    60   ~ 0
+RST
+$Comp
+L GND #PWR03
+U 1 1 5582A053
+P 3900 3600
+F 0 "#PWR03" H 3900 3350 50  0001 C CNN
+F 1 "GND" H 3900 3450 50  0000 C CNN
+F 2 "" H 3900 3600 60  0000 C CNN
+F 3 "" H 3900 3600 60  0000 C CNN
+	1    3900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5582A221
+P 5600 3400
+F 0 "#PWR04" H 5600 3150 50  0001 C CNN
+F 1 "GND" H 5600 3250 50  0000 C CNN
+F 2 "" H 5600 3400 60  0000 C CNN
+F 3 "" H 5600 3400 60  0000 C CNN
+	1    5600 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3400 5600 3400
+Wire Wire Line
+	4000 3500 4150 3500
+Wire Wire Line
+	3900 3600 4150 3600
+Text Label 5450 3300 0    60   ~ 0
+VIN
+Wire Wire Line
+	5350 3300 5450 3300
+Text Label 4000 3300 2    60   ~ 0
+TX1
+Text Label 4000 3400 2    60   ~ 0
+RX0
+Text Label 4000 3700 2    60   ~ 0
+D2
+Text Label 4000 3800 2    60   ~ 0
+D3
+Text Label 4000 3900 2    60   ~ 0
+D4
+Text Label 4000 4000 2    60   ~ 0
+D5
+Text Label 4000 4100 2    60   ~ 0
+D6
+Wire Wire Line
+	4000 3300 4150 3300
+Wire Wire Line
+	4000 3400 4150 3400
+Wire Wire Line
+	4000 3700 4150 3700
+Wire Wire Line
+	4000 3800 4150 3800
+Wire Wire Line
+	4000 3900 4150 3900
+Wire Wire Line
+	4000 4000 4150 4000
+Wire Wire Line
+	4000 4100 4150 4100
+Text Label 4000 4200 2    60   ~ 0
+D7
+Text Label 4000 4300 2    60   ~ 0
+D8
+Text Label 4000 4400 2    60   ~ 0
+D9
+Text Label 4000 4500 2    60   ~ 0
+D10
+Text Label 4000 4600 2    60   ~ 0
+D11
+Text Label 4000 4700 2    60   ~ 0
+D12
+Wire Wire Line
+	4000 4700 4150 4700
+Wire Wire Line
+	4000 4600 4150 4600
+Wire Wire Line
+	4000 4500 4150 4500
+Wire Wire Line
+	4150 4400 4000 4400
+Wire Wire Line
+	4000 4300 4150 4300
+Wire Wire Line
+	4150 4200 4000 4200
+Text Label 5450 4700 0    60   ~ 0
+D13
+Wire Wire Line
+	5450 4700 5350 4700
+Text Label 5450 4500 0    60   ~ 0
+REF
+Text Label 5450 4400 0    60   ~ 0
+A0
+Text Label 5450 4300 0    60   ~ 0
+A1
+Text Label 5450 4200 0    60   ~ 0
+A2
+Text Label 5450 4100 0    60   ~ 0
+A3
+Text Label 5450 4000 0    60   ~ 0
+A4
+Text Label 5450 3900 0    60   ~ 0
+A5
+Text Label 5450 3800 0    60   ~ 0
+A6
+Text Label 5450 3700 0    60   ~ 0
+A7
+Text Label 5450 3600 0    60   ~ 0
+5V
+Text Label 5450 3500 0    60   ~ 0
+RST
+Wire Wire Line
+	5350 3500 5450 3500
+Wire Wire Line
+	5450 3600 5350 3600
+Wire Wire Line
+	5350 3700 5450 3700
+Wire Wire Line
+	5450 3800 5350 3800
+Wire Wire Line
+	5350 3900 5450 3900
+Wire Wire Line
+	5350 4000 5450 4000
+Wire Wire Line
+	5350 4100 5450 4100
+Wire Wire Line
+	5350 4200 5450 4200
+Wire Wire Line
+	5350 4400 5450 4400
+Wire Wire Line
+	5350 4500 5450 4500
+$Comp
+L VDD #PWR05
+U 1 1 5583100F
+P 5600 4600
+F 0 "#PWR05" H 5600 4450 50  0001 C CNN
+F 1 "VDD" H 5600 4750 50  0000 C CNN
+F 2 "" H 5600 4600 60  0000 C CNN
+F 3 "" H 5600 4600 60  0000 C CNN
+	1    5600 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 4600 5600 4600
 $EndSCHEMATC

@@ -1,0 +1,9 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C1";"C_0603_HandSoldering";1;"10uF";;;
+2;"C2,C3,C4,C5,C6,C7,C8,C10";"C_0603_HandSoldering";8;"100n";;;
+3;"C9,C11";"C_0603_HandSoldering";2;"10u";;;
+4;"P1,P2";"Pin_Header_Straight_1x15";2;"CONN_01X15";;;
+5;"P3";"Pin_Header_Straight_2x05";1;"CONN_02X05";;;
+6;"R1,R2";"R_0603_HandSoldering";2;"100K";;;
+7;"R3";"R_0603_HandSoldering";1;"10K";;;
+8;"U2";"SOT-223";1;"LD1117S33TR";;;

@@ -32,4 +32,6 @@
 *.dSYM/
 *.bck
 *.bak
+*-bak
 *cache*
+

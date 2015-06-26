@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-05-17 BZR 5656)-product   date = Ter 16 Jun 2015 07:44:13 BRT
+Cmp-Mod V01 Created by Cvpcb (2015-05-17 BZR 5656)-product   date = Qua 24 Jun 2015 22:19:06 BRT
 
 BeginCmp
 TimeStamp = /55709F36/55721068;
@@ -116,7 +116,7 @@ BeginCmp
 TimeStamp = /557215E4/55734C2E;
 Reference = P4;
 ValeurCmp = USB_B;
-IdModule  = ;
+IdModule  = Connect:USB_Micro-B;
 EndCmp
 
 BeginCmp
@@ -158,21 +158,21 @@ BeginCmp
 TimeStamp = /55709F36/55721320;
 Reference = U1;
 ValeurCmp = ATSAMR21G1x;
-IdModule  = ;
+IdModule  = processing:QFN48EP;
 EndCmp
 
 BeginCmp
 TimeStamp = /55722354/55722587;
 Reference = U2;
 ValeurCmp = LD1117S33TR;
-IdModule  = SOT-223;
+IdModule  = SMD_Packages:SOT-223;
 EndCmp
 
 BeginCmp
 TimeStamp = /55709F36/5561D3BF;
 Reference = Y1;
 ValeurCmp = 16MHz;
-IdModule  = ;
+IdModule  = Crystals_Oscillators_SMD:Q_49U3HMS;
 EndCmp
 
 EndListe
