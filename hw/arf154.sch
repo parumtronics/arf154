@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:arf154-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -82,7 +83,7 @@ $Sheet
 S 800  900  1100 1050
 U 55722354
 F0 "MainPower" 60
-F1 "plugmodules/power/linear3v3.sch" 60
+F1 "plugmodules/power/linear3v3small.sch" 60
 $EndSheet
 $Sheet
 S 5100 750  900  750 

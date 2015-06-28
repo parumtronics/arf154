@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:arf154-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -286,9 +287,11 @@ $Comp
 L 2450BM15A0015 T1
 U 1 1 5571FEAC
 P 2000 2750
+AR Path="/5571FEAC" Ref="T1"  Part="1" 
+AR Path="/55709F36/5571FEAC" Ref="T1"  Part="1" 
 F 0 "T1" H 1850 3000 60  0000 C CNN
 F 1 "2450BM15A0015" H 2100 2300 60  0001 C CNN
-F 2 "" H 2000 2750 60  0001 C CNN
+F 2 "processing:JBALUN" H 2000 2750 60  0001 C CNN
 F 3 "http://www.johansontechnology.com/datasheets/balun-filter/2450BM15A0015.pdf" H 2000 2000 60  0001 C CNN
 F 4 "2450BM15A0015" H 2100 2400 60  0001 C CNN "PN"
 F 5 "712-1576-1-ND" H 2100 2200 60  0001 C CNN "DigikeyPN"

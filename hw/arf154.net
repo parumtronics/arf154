@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/familia/projetos/pessoais/parumtronics/arf154/hw/arf154.sch)
-    (date "Qua 24 Jun 2015 23:20:39 BRT")
-    (tool "Eeschema (2015-05-17 BZR 5656)-product")
+    (date "Sex 26 Jun 2015 07:51:22 BRT")
+    (tool "Eeschema (2015-06-25 BZR 5822)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -115,6 +115,7 @@
       (tstamp 5571F4C6))
     (comp (ref T1)
       (value 2450BM15A0015)
+      (footprint processing:JBALUN)
       (datasheet http://www.johansontechnology.com/datasheets/balun-filter/2450BM15A0015.pdf)
       (fields
         (field (name PN) 2450BM15A0015)
@@ -201,14 +202,66 @@
       (sheetpath (names /Sheet557215E3/) (tstamps /557215E4/))
       (tstamp 55735712)))
   (libparts
-    (libpart (lib device) (part SW_PUSH)
-      (description "Push Button")
+    (libpart (lib device) (part C_Small)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
       (fields
-        (field (name Reference) SW)
-        (field (name Value) SW_PUSH))
+        (field (name Reference) C)
+        (field (name Value) C_Small))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part Crystal_Small)
+      (description "Two pin crystal")
+      (footprints
+        (fp Crystal_))
+      (fields
+        (field (name Reference) Y)
+        (field (name Value) Crystal_Small))
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
+    (libpart (lib conn) (part USB_B)
+      (description "USB B connector")
+      (footprints
+        (fp USB*))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) USB_B))
+      (pins
+        (pin (num 1) (name VCC) (type power_out))
+        (pin (num 2) (name D-) (type passive))
+        (pin (num 3) (name D+) (type passive))
+        (pin (num 4) (name GND) (type power_in))
+        (pin (num 5) (name shield) (type passive))))
+    (libpart (lib regul) (part LD1117S33TR)
+      (aliases
+        (alias LD1117S33CTR)
+        (alias LD1117S12TR)
+        (alias LD1117S12CTR)
+        (alias LD1117S18TR)
+        (alias LD1117S18CTR)
+        (alias LD1117S25TR)
+        (alias LD1117S25CTR)
+        (alias LD1117S50TR)
+        (alias LD1117S50CTR))
+      (description "LD1117S33TR, 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT223")
+      (docs http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf)
+      (footprints
+        (fp SOT223))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) LD1117S33TR)
+        (field (name Footprint) SOT-223))
+      (pins
+        (pin (num 1) (name GND) (type power_in))
+        (pin (num 2) (name VO) (type power_out))
+        (pin (num 3) (name VI) (type power_in))))
     (libpart (lib balun) (part 2450BM15A0015)
       (fields
         (field (name Reference) T)
@@ -296,27 +349,14 @@
         (pin (num 46) (name PA31) (type BiDi))
         (pin (num 47) (name PA2) (type BiDi))
         (pin (num 48) (name PA3) (type BiDi))))
-    (libpart (lib device) (part Crystal_Small)
-      (description "Two pin crystal")
-      (footprints
-        (fp Crystal_))
+    (libpart (lib device) (part SW_PUSH)
+      (description "Push Button")
       (fields
-        (field (name Reference) Y)
-        (field (name Value) Crystal_Small))
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH))
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part R_Small)
-      (description Resistor)
-      (footprints
-        (fp Resistor_*)
-        (fp R_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R_Small))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib conn) (part CONN_01X15)
       (footprints
         (fp Pin_Header_Straight_1X15)
@@ -342,29 +382,6 @@
         (pin (num 13) (name P13) (type passive))
         (pin (num 14) (name P14) (type passive))
         (pin (num 15) (name P15) (type passive))))
-    (libpart (lib regul) (part LD1117S33TR)
-      (aliases
-        (alias LD1117S33CTR)
-        (alias LD1117S12TR)
-        (alias LD1117S12CTR)
-        (alias LD1117S18TR)
-        (alias LD1117S18CTR)
-        (alias LD1117S25TR)
-        (alias LD1117S25CTR)
-        (alias LD1117S50TR)
-        (alias LD1117S50CTR))
-      (description "LD1117S33TR, 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT223")
-      (docs http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf)
-      (footprints
-        (fp SOT223))
-      (fields
-        (field (name Reference) U)
-        (field (name Value) LD1117S33TR)
-        (field (name Footprint) SOT-223))
-      (pins
-        (pin (num 1) (name GND) (type power_in))
-        (pin (num 2) (name VO) (type power_out))
-        (pin (num 3) (name VI) (type power_in))))
     (libpart (lib conn) (part CONN_02X05)
       (footprints
         (fp Pin_Header_Straight_2X05)
@@ -385,48 +402,32 @@
         (pin (num 8) (name P8) (type passive))
         (pin (num 9) (name P9) (type passive))
         (pin (num 10) (name P10) (type passive))))
-    (libpart (lib conn) (part USB_B)
-      (description "USB B connector")
+    (libpart (lib device) (part R_Small)
+      (description Resistor)
       (footprints
-        (fp USB*))
+        (fp Resistor_*)
+        (fp R_*))
       (fields
-        (field (name Reference) P)
-        (field (name Value) USB_B))
-      (pins
-        (pin (num 1) (name VCC) (type power_out))
-        (pin (num 2) (name D-) (type passive))
-        (pin (num 3) (name D+) (type passive))
-        (pin (num 4) (name GND) (type power_in))
-        (pin (num 5) (name shield) (type passive))))
-    (libpart (lib device) (part C_Small)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C_Small))
+        (field (name Reference) R)
+        (field (name Value) R_Small))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
+    (library (logical device)
+      (uri /usr/local/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/local/share/kicad/library/conn.lib))
+    (library (logical regul)
+      (uri /usr/local/share/kicad/library/regul.lib))
+    (library (logical esdprotection)
+      (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/comm/esdprotection.lib))
     (library (logical transceiversoc)
       (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/processing/transceiversoc.lib))
     (library (logical balun)
       (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/rf/balun.lib))
     (library (logical rf)
-      (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/rf/rf.lib))
-    (library (logical esdprotection)
-      (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/comm/esdprotection.lib))
-    (library (logical regul)
-      (uri /usr/local/share/kicad/library/regul.lib))
-    (library (logical device)
-      (uri /usr/local/share/kicad/library/device.lib))
-    (library (logical conn)
-      (uri /usr/local/share/kicad/library/conn.lib)))
+      (uri /home/familia/projetos/pessoais/parumtronics/arf154/hw/pluglib/rf/rf.lib)))
   (nets
     (net (code 1) (name /D5)
       (node (ref P1) (pin 8)))
