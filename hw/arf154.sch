@@ -33,6 +33,7 @@ LIBS:balun
 LIBS:rf
 LIBS:transceiversoc
 LIBS:esdprotection
+LIBS:linear_regulator
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END

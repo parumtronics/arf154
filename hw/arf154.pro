@@ -1,4 +1,4 @@
-update=Sex 26 Jun 2015 07:14:00 BRT
+update=Dom 28 Jun 2015 09:51:35 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -74,3 +74,4 @@ LibName32=pluglib/rf/balun
 LibName33=pluglib/rf/rf
 LibName34=pluglib/processing/transceiversoc
 LibName35=pluglib/comm/esdprotection
+LibName36=pluglib/power/linear_regulator

@@ -33,6 +33,7 @@ LIBS:balun
 LIBS:rf
 LIBS:transceiversoc
 LIBS:esdprotection
+LIBS:linear_regulator
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END
@@ -175,7 +176,7 @@ U 1 1 5561D465
 P 3350 2700
 F 0 "SW1" H 3500 2810 50  0000 C CNN
 F 1 "SW_PUSH" H 3350 2620 50  0000 C CNN
-F 2 "" H 3350 2700 60  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_FSMSM" H 3350 2700 60  0001 C CNN
 F 3 "" H 3350 2700 60  0000 C CNN
 	1    3350 2700
 	1    0    0    -1  

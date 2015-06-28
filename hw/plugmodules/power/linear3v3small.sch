@@ -33,6 +33,7 @@ LIBS:balun
 LIBS:rf
 LIBS:transceiversoc
 LIBS:esdprotection
+LIBS:linear_regulator
 LIBS:arf154-cache
 EELAYER 25 0
 EELAYER END
@@ -57,17 +58,6 @@ F 1 "100n" H 3010 2620 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3000 2700 60  0001 C CNN
 F 3 "" H 3000 2700 60  0000 C CNN
 	1    3000 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L LD1117S33TR U2
-U 1 1 55722587
-P 3450 2550
-F 0 "U2" H 3450 2800 40  0000 C CNN
-F 1 "LD1117S33TR" H 3450 2750 40  0000 C CNN
-F 2 "SMD_Packages:SOT-223" H 3450 2650 40  0000 C CNN
-F 3 "" H 3450 2550 60  0000 C CNN
-	1    3450 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -152,4 +142,15 @@ Wire Wire Line
 	3050 2500 3000 2500
 Connection ~ 3000 2500
 Connection ~ 3900 2500
+$Comp
+L AZ1117C U2
+U 1 1 558FF898
+P 3450 2550
+F 0 "U2" H 3250 2750 40  0000 C CNN
+F 1 "AZ1117C" H 3650 2350 40  0000 C CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing_Handsoldering" H 3450 2650 40  0001 C CNN
+F 3 "" H 3450 2550 60  0000 C CNN
+	1    3450 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
