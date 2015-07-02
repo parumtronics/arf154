@@ -332,21 +332,21 @@ Wire Wire Line
 	5350 4600 5600 4600
 Wire Wire Line
 	5350 4300 5450 4300
-Text Label 2150 4050 0    60   ~ 0
-A0
 Text Label 2150 3950 0    60   ~ 0
+A0
+Text Label 2150 4050 0    60   ~ 0
 A1
-Text Label 2150 3850 0    60   ~ 0
-A2
-Text Label 2150 3750 0    60   ~ 0
-A3
 Text Label 2150 3350 0    60   ~ 0
-A4
+A2
 Text Label 2150 3450 0    60   ~ 0
-A5
+A3
 Text Label 2150 3550 0    60   ~ 0
-A6
+A4
 Text Label 2150 3650 0    60   ~ 0
+A5
+Text Label 2150 3750 0    60   ~ 0
+A6
+Text Label 2150 3850 0    60   ~ 0
 A7
 $Sheet
 S 800  3000 1250 4450
