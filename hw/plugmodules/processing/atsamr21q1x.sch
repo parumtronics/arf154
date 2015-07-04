@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:arf154-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -238,7 +237,7 @@ U 1 1 5571F4C6
 P 3000 5400
 F 0 "P3" H 3000 5700 50  0000 C CNN
 F 1 "CONN_02X05" H 3000 5100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 3000 4200 60  0001 C CNN
+F 2 "processing:CMxDBG" H 3000 4200 60  0001 C CNN
 F 3 "" H 3000 4200 60  0000 C CNN
 	1    3000 5400
 	1    0    0    -1  
@@ -583,6 +582,8 @@ $Comp
 L ATSAMR21G1x U1
 U 1 1 55721320
 P 5250 3850
+AR Path="/55721320" Ref="U1"  Part="1" 
+AR Path="/55709F36/55721320" Ref="U1"  Part="1" 
 F 0 "U1" H 4850 5200 50  0000 C CNN
 F 1 "ATSAMR21G1x" H 5350 2250 50  0000 C CNN
 F 2 "processing:QFN48EP" H 5200 3550 60  0001 C CNN
