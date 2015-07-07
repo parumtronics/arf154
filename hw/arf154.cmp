@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-05-17 BZR 5656)-product   date = Qui 02 Jul 2015 22:16:44 BRT
+Cmp-Mod V01 Created by Cvpcb (2015-05-17 BZR 5656)-product   date = Seg 06 Jul 2015 07:51:41 BRT
 
 BeginCmp
 TimeStamp = /55709F36/559042B3;
@@ -117,6 +117,20 @@ TimeStamp = /557215E4/55735712;
 Reference = D1;
 ValeurCmp = PRTR5V0U2X;
 IdModule  = comm:SOT143B;
+EndCmp
+
+BeginCmp
+TimeStamp = /559A6648;
+Reference = D2;
+ValeurCmp = D_Small;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /559A7357;
+Reference = D3;
+ValeurCmp = D_Small;
+IdModule  = ;
 EndCmp
 
 BeginCmp
